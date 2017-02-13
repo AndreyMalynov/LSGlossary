@@ -33,6 +33,7 @@ namespace LSGlossary.Controllers
             {
                 users.AddUserIdentity(login);
                 idOfUser = users.GetUserIdByLogin(login);
+
             }
 
             FormsAuthentication.SetAuthCookie(idOfUser.ToString(), true);
@@ -43,9 +44,11 @@ namespace LSGlossary.Controllers
         {
             if (!User.Identity.IsAuthenticated)
                 return RedirectToAction("Login");
+
             using(UserContext user = new UserContext(int.Parse(User.Identity.Name)))
             {
-                return View(user);
+                UserForView userForView = new UserForView(user.GetLogin(), user.GetWords());
+                return View(userForView);
             }           
         }
     }

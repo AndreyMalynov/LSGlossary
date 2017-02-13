@@ -4,36 +4,24 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Security;
+using LSGlossary.Models;
+using LSGlossary.Abstract;
 
 namespace LSGlossary.Controllers
 {
     public class ValuesController : ApiController
     {
-        // GET api/values
-        public IEnumerable<string> Get()
+        private IUserContext user;
+
+        public ValuesController()
         {
-            return new string[] { "value1", "value2" };
+            user = new UserContext(int.Parse(User.Identity.Name));
         }
 
-        // GET api/values/5
-        public string Get(int id)
+        public IEnumerable<Word> GetWords()
         {
-            return "value";
-        }
-
-        // POST api/values
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT api/values/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
-        public void Delete(int id)
-        {
+            return user.GetWords();
         }
     }
 }

@@ -21,7 +21,6 @@ namespace LSGlossary.Models
 
         public void Dispose()
         {
-            throw new NotImplementedException();
         }
 
         public void CreateUser(int userId)
@@ -37,6 +36,11 @@ namespace LSGlossary.Models
         public List<Word> GetWords()
         {
             return User.Words;
+        }
+
+        public string GetLogin()
+        {
+            return User.Login;
         }
 
         public void Open()
@@ -75,7 +79,7 @@ namespace LSGlossary.Models
                 catch
                 {
                     CreateUser(userId);
-                    using (FileStream fs = new FileStream(HttpContext.Current.Server.MapPath("~/App_Data/Users" + userId + ".xml"), FileMode.OpenOrCreate))
+                    using (FileStream fs = new FileStream(HttpContext.Current.Server.MapPath("~/App_Data/Users/" + userId + ".xml"), FileMode.OpenOrCreate))
                     {
                         formatter.Serialize(fs, User);
                     }
@@ -91,7 +95,7 @@ namespace LSGlossary.Models
         {
             try
             {
-                using (FileStream fs = new FileStream(HttpContext.Current.Server.MapPath("~/App_Data/Users" + User.Id + ".xml"), FileMode.Create))
+                using (FileStream fs = new FileStream(HttpContext.Current.Server.MapPath("~/App_Data/Users/" + User.Id + ".xml"), FileMode.Create))
                 {
                     formatter.Serialize(fs, User);
                 }

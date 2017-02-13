@@ -57,7 +57,8 @@ namespace LSGlossary.Models
             UserIdentity userIdentity = Users.Find(x => x.Id == id);
             return userIdentity.Login;
         }
-
+        
+        
         public void OpenOrCreate()
         {
             lock (lockObj)

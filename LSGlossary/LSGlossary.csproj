@@ -194,6 +194,7 @@
     </Compile>
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserContext.cs" />
+    <Compile Include="Models\UserForView.cs" />
     <Compile Include="Models\UserIdentity.cs" />
     <Compile Include="Models\UsersContext.cs" />
     <Compile Include="Models\Word.cs" />
