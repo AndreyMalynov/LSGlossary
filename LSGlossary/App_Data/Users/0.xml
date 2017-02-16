@@ -1,56 +1,6 @@
 <?xml version="1.0"?>
 <User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Login>Ever</Login>
+  <Login>Sam</Login>
   <Id>0</Id>
-  <Words>
-    <Word>
-      <Id>2</Id>
-      <Name>what</Name>
-      <Pronunciation> is it really</Pronunciation>
-      <Definition>1def</Definition>
-      <Example> 1exam</Example>
-    </Word>
-    <Word>
-      <Id>4</Id>
-      <Name>one</Name>
-      <Pronunciation>  are </Pronunciation>
-      <Definition>your kidding</Definition>
-      <Example> yees</Example>
-    </Word>
-    <Word>
-      <Id>5</Id>
-      <Name>some</Name>
-      <Pronunciation> /s(ə)m/</Pronunciation>
-      <Definition>An unspecified amount or number of.</Definition>
-      <Example>  ‘I made some money running errands’</Example>
-    </Word>
-    <Word>
-      <Id>6</Id>
-      <Name>change</Name>
-      <Pronunciation>/tʃeɪn(d)ʒ/</Pronunciation>
-      <Definition>Make or become different.</Definition>
-      <Example>with object ‘a proposal to change the law’</Example>
-    </Word>
-    <Word>
-      <Id>7</Id>
-      <Name>sosss</Name>
-      <Pronunciation> ***</Pronunciation>
-      <Definition>***</Definition>
-      <Example> ***ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</Example>
-    </Word>
-    <Word>
-      <Id>8</Id>
-      <Name>sometimes</Name>
-      <Pronunciation>/ˈsʌmtʌɪmz/</Pronunciation>
-      <Definition>Occasionally, rather than all of the time.</Definition>
-      <Example> ‘sometimes I want to do things on my own’</Example>
-    </Word>
-    <Word>
-      <Id>9</Id>
-      <Name>whww</Name>
-      <Pronunciation> svet</Pronunciation>
-      <Definition>***</Definition>
-      <Example> ***</Example>
-    </Word>
-  </Words>
+  <Words />
 </User>

@@ -1,0 +1,30 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.delete {
+    width: 2vw;
+    height: 2vw;
+    background: url('delete.png') no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.delete:hover {
+    opacity: 0.8;
+}
