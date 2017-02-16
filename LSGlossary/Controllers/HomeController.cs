@@ -47,11 +47,11 @@ namespace LSGlossary.Controllers
 
             using(UserContext user = new UserContext(int.Parse(User.Identity.Name)))
             {
-                // temper block
-                user.AddWord("1name", "1pron", "1def", "1exam");
-                user.AddWord("2name", "2pron", "2def", "2exam");
-                user.SaveChanges();
-                // end of temper block
+                //// temper block
+                //user.AddWord("1name", "1pron", "1def", "1exam");
+                //user.AddWord("2name", "2pron", "2def", "2exam");
+                //user.SaveChanges();
+                //// end of temper block
 
 
                 UserForView userForView = new UserForView(user.GetLogin(), user.GetWords());

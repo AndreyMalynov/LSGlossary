@@ -93,7 +93,7 @@ function AddEditEvent() {
 }
 
 function SaveEditWord(id, name, pronunciation, definition, example) {
-    alert(id + '\n' + name + '\n' + pronunciation + '\n' + definition + '\n' + example);
+    //alert(id + '\n' + name + '\n' + pronunciation + '\n' + definition + '\n' + example);
     var editedWord = {
         Id: id,
         Name: name,
