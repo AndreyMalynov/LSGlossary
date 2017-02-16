@@ -43,9 +43,35 @@ namespace LSGlossary.Models
             return User.Login;
         }
 
-        public void AddWord(Word word)
+        private int GetLastFreeIdOfWords()
         {
+            if (User.Words.Count > 0)
+                return User.Words.Aggregate((x, y) => (x.Id > y.Id) ? x : y).Id + 1;
+            return 0;
+        }
+
+        public void AddWord(string name, string pronunciation, string definition, string example)
+        {
+            int id = GetLastFreeIdOfWords();
+            Word word = new Word(id, name, pronunciation, definition, example);
             User.Words.Add(word);
+        }
+
+        public Word GetWordById(int id)
+        {
+            return User.Words.Find(x => x.Id == id);
+        }
+
+        public void EditWord(Word editedWord)
+        {
+            Word word = GetWordById(editedWord.Id);
+
+            word.Name = editedWord.Name;
+            word.Pronunciation = editedWord.Pronunciation;
+            word.Definition = editedWord.Definition;
+            word.Example = editedWord.Example;
+
+            SaveChanges();
         }
 
         public void Open()

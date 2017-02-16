@@ -16,6 +16,7 @@ namespace LSGlossary.Controllers
 
         public ValuesController()
         {
+            // с куки разобраться 
             user = new UserContext(int.Parse(User.Identity.Name));
         }
 
@@ -27,10 +28,15 @@ namespace LSGlossary.Controllers
         [HttpPost]
         public void AddWord([FromBody]string nameOfWord)
         {
-            //add new word
-            user.GetWords();
-
+            //test add new word
+            user.AddWord(nameOfWord, "*", "**", "***");
             user.SaveChanges();
+        }
+
+        [HttpPut]
+        public void EditWord(int id, [FromBody]Word editedWord)
+        {
+            user.EditWord(editedWord);
         }
     }
 }

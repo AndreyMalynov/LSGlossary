@@ -9,7 +9,7 @@ namespace LSGlossary.Models
     {
         public User()
         {
-
+            Words = new List<Word>();
         }
 
         public User(string login, int id)

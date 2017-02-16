@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Login>Ever</Login>
+  <Id>0</Id>
+  <Words>
+    <Word>
+      <Id>0</Id>
+      <Name>1n</Name>
+      <Pronunciation> 1pron</Pronunciation>
+      <Definition>1d</Definition>
+      <Example> 1exam</Example>
+    </Word>
+    <Word>
+      <Id>1</Id>
+      <Name>2name</Name>
+      <Pronunciation>2pron</Pronunciation>
+      <Definition>2def</Definition>
+      <Example>2exam</Example>
+    </Word>
+    <Word>
+      <Id>2</Id>
+      <Name>1name</Name>
+      <Pronunciation>1pron</Pronunciation>
+      <Definition>1def</Definition>
+      <Example>1exam</Example>
+    </Word>
+    <Word>
+      <Id>3</Id>
+      <Name>2name</Name>
+      <Pronunciation>2pron</Pronunciation>
+      <Definition>2def</Definition>
+      <Example>2exam</Example>
+    </Word>
+  </Words>
+</User>

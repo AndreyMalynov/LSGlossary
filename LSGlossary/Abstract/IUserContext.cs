@@ -12,6 +12,8 @@ namespace LSGlossary.Abstract
         List<Word> GetWords();
         void CreateUser(int userId);
         void Open();
-        void SaveChanges();        
+        void SaveChanges();
+        void AddWord(string nameOfWord, string v1, string v2, string v3);
+        void EditWord(Word editedWord);
     }
 }
