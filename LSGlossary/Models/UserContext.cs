@@ -43,6 +43,11 @@ namespace LSGlossary.Models
             return User.Login;
         }
 
+        public void AddWord(Word word)
+        {
+            User.Words.Add(word);
+        }
+
         public void Open()
         {
             //выбросит исключение если файл еще не создан

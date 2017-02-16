@@ -10,7 +10,7 @@ namespace LSGlossary.Models
         public UserForView(string login, List<Word> words)
         {
             Login = login;
-            Words = new List<Word>();
+            Words = words;
         }
 
         public string Login { get; set; }

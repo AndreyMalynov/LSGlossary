@@ -23,5 +23,14 @@ namespace LSGlossary.Controllers
         {
             return user.GetWords();
         }
+
+        [HttpPost]
+        public void AddWord([FromBody]string nameOfWord)
+        {
+            //add new word
+            user.GetWords();
+
+            user.SaveChanges();
+        }
     }
 }

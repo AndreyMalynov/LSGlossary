@@ -1,7 +1,15 @@
 <?xml version="1.0"?>
 <ArrayOfUserIdentity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <UserIdentity>
-    <Login>Elon21</Login>
+    <Login>some</Login>
     <Id>0</Id>
+  </UserIdentity>
+  <UserIdentity>
+    <Login>lisa</Login>
+    <Id>1</Id>
+  </UserIdentity>
+  <UserIdentity>
+    <Login>Ever</Login>
+    <Id>2</Id>
   </UserIdentity>
 </ArrayOfUserIdentity>
