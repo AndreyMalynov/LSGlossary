@@ -15,5 +15,7 @@ namespace LSGlossary.Abstract
         void SaveChanges();
         void AddWord(string nameOfWord, string v1, string v2, string v3);
         void EditWord(Word editedWord);
+        Word GetWordById(int id);
+        void RemoveWordById(int id);
     }
 }

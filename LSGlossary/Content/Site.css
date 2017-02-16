@@ -15,3 +15,16 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.delete {
+    width: 2vw;
+    height: 2vw;
+    background: url('delete.png') no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.delete:hover {
+    opacity: 0.8;
+}

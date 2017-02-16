@@ -7,6 +7,7 @@ using System.Web.Http;
 using System.Web.Security;
 using LSGlossary.Models;
 using LSGlossary.Abstract;
+using LSGlossary.Classes;
 
 namespace LSGlossary.Controllers
 {
@@ -28,15 +29,25 @@ namespace LSGlossary.Controllers
         [HttpPost]
         public void AddWord([FromBody]string nameOfWord)
         {
-            //test add new word
-            user.AddWord(nameOfWord, "*", "**", "***");
-            user.SaveChanges();
+            Parser parser = new Parser();
+            Word temperWord = parser.OxfordDictionarieParser(nameOfWord);
+            if (temperWord == null)
+                user.AddWord(nameOfWord, "***", "***", "***");
+            else
+                user.AddWord(nameOfWord, temperWord.Pronunciation, temperWord.Definition, temperWord.Example);
         }
 
         [HttpPut]
         public void EditWord(int id, [FromBody]Word editedWord)
         {
             user.EditWord(editedWord);
+        }
+
+        public void DeleteWord(int id)
+        {
+            Word word = user.GetWordById(id);
+            if (word != null)
+                user.RemoveWordById(id);
         }
     }
 }

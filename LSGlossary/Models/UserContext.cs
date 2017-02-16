@@ -55,11 +55,18 @@ namespace LSGlossary.Models
             int id = GetLastFreeIdOfWords();
             Word word = new Word(id, name, pronunciation, definition, example);
             User.Words.Add(word);
+            SaveChanges();
         }
 
         public Word GetWordById(int id)
         {
             return User.Words.Find(x => x.Id == id);
+        }
+
+        public void RemoveWordById(int id)
+        {
+            User.Words.Remove(GetWordById(id));
+            SaveChanges();
         }
 
         public void EditWord(Word editedWord)

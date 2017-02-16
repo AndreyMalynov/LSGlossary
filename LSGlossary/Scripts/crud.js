@@ -52,13 +52,13 @@ function GetAllWords() {
 
 
 function WriteResponse(words) {
-    var strResult = "<table class='table'><th>Name</th><th>Pronunciation</th><th>Definition</th><th>Example</th>";
+    var strResult = "<table class='table'><th>Name</th><th>Pronunciation</th><th>Definition</th><th>Example</th><th></th>";
     $.each(words, function (index, word) {
         strResult += "<tr" + " id='" + word.Id + "'><td class='name'>" + word.Name + "</td><td class='pronunciation'> " + word.Pronunciation +
-            "</td><td class='definition'>" + word.Definition + "</td><td class='example'> " + word.Example + "</td><td>" + "</tr>";
+            "</td><td class='definition'>" + word.Definition + "</td><td class='example'> " + word.Example + "</td>" +
         //"<td><div class='edit-icon' id='editItem' data-item='" + elementOfList.Id + "' onclick='EditItem(this);' ></div></td>" +
-        //"<td><div class='delete-icon' id='delItem' data-item='" + elementOfList.Id + "' onclick='DeleteItem(this);' ></div></td>"
-
+        "<td><div class='delete' onclick='DeleteWord("+ word.Id + ");' ></div></td>"
+        + "</tr>";
     });
     strResult += "</table>";
     $("#tableBlock").html(strResult);
@@ -70,6 +70,7 @@ function AddEditEvent() {
         $('td').click(function (e) { //ловим элемент, по которому кликнули
             var t = e.target || e.srcElement; //получаем название тега
             var elm_name = t.tagName.toLowerCase(); //если это инпут - ничего не делаем
+            if (t.className == 'delete') { return false; } 
             if (elm_name == 'input') { return false; }
             var val = $(this).html();
             var code = '<input type="text" id="edit" value="' + val + '" />';
@@ -107,10 +108,24 @@ function SaveEditWord(id, name, pronunciation, definition, example) {
         data: JSON.stringify(editedWord),
         contentType: "application/json;charset=utf-8",
         success: function (data) {
-            //GetAllWords();
+            GetAllWords();
         },
         error: function (x, y, z) {
             alert(x + '\n' + y + '\n' + z);
+        }
+    });
+}
+
+function DeleteWord(id) {
+    $.ajax({
+        url: '/api/values/' + id,
+        type: 'DELETE',
+        contentType: "application/json;charset=utf-8",
+        success: function (data) {
+            GetAllWords();
+        },
+        error: function (x, y, z) {
+            alert(id + '\n' + y + '\n' + z);
         }
     });
 }

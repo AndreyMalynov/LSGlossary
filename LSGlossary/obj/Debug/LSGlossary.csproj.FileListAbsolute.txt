@@ -136,3 +136,5 @@ C:\Users\Avels\Documents\Visual Studio 2015\Projects\LSGlossary\LSGlossary\bin\r
 C:\Users\Avels\Documents\Visual Studio 2015\Projects\LSGlossary\LSGlossary\obj\Debug\LSGlossary.csprojResolveAssemblyReference.cache
 C:\Users\Avels\Documents\Visual Studio 2015\Projects\LSGlossary\LSGlossary\obj\Debug\LSGlossary.dll
 C:\Users\Avels\Documents\Visual Studio 2015\Projects\LSGlossary\LSGlossary\obj\Debug\LSGlossary.pdb
+C:\Users\Avels\Documents\Visual Studio 2015\Projects\LSGlossary\LSGlossary\bin\AngleSharp.dll
+C:\Users\Avels\Documents\Visual Studio 2015\Projects\LSGlossary\LSGlossary\bin\AngleSharp.xml
