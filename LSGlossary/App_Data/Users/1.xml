@@ -5,17 +5,17 @@
   <Words>
     <Word>
       <Id>0</Id>
-      <Name>some</Name>
-      <Pronunciation>   /s(ə)m/</Pronunciation>
-      <Definition>An unspecified amount or number of.</Definition>
-      <Example>    ‘I made some money running errands’</Example>
+      <Name>change</Name>
+      <Pronunciation> /tʃeɪn(d)ʒ/</Pronunciation>
+      <Definition>Make or become different.</Definition>
+      <Example> with object ‘a proposal to change the law’</Example>
     </Word>
     <Word>
       <Id>1</Id>
-      <Name>second</Name>
-      <Pronunciation> /sɪˈkɒnd/</Pronunciation>
-      <Definition>Constituting number two in a sequence; coming after the first in time or order; 2nd.</Definition>
-      <Example>  ‘he married for a second time’</Example>
+      <Name>some</Name>
+      <Pronunciation> /s(ə)m/</Pronunciation>
+      <Definition>An unspecified amount or number of.</Definition>
+      <Example>  ‘I made some money running errands’</Example>
     </Word>
   </Words>
 </User>

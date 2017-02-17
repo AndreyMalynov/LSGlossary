@@ -28,3 +28,21 @@ textarea {
 .delete:hover {
     opacity: 0.8;
 }
+
+.nav-form{
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    display: inline !important;
+}
+
+#addWord, #inputLogin{
+    display: inline;
+    width: 30vw;
+    max-width: 30vw;
+}
+
+#addWordBtn, #loginBtn{
+    display: inline;
+    width: 10vw;
+}

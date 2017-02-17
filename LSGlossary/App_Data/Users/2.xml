@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Login />
+  <Id>2</Id>
+  <Words>
+    <Word>
+      <Id>0</Id>
+      <Name>somesf</Name>
+      <Pronunciation>&lt;input id="edit" value="      /wʌn/" style="border:0;" type="text"&gt;</Pronunciation>
+      <Definition>&lt;input id="edit" value="&lt;input id=" edit"="" style="border:0;" type="text"&gt;" style="border:0;"/&amp;gt;</Definition>
+      <Example> &lt;input id="edit" value="      ‘there's only room for one person’" style="border:0;" type="text"&gt;</Example>
+    </Word>
+    <Word>
+      <Id>1</Id>
+      <Name />
+      <Pronunciation>***</Pronunciation>
+      <Definition>***</Definition>
+      <Example>***</Example>
+    </Word>
+  </Words>
+</User>

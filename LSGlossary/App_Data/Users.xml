@@ -8,4 +8,12 @@
     <Login>Ever</Login>
     <Id>1</Id>
   </UserIdentity>
+  <UserIdentity>
+    <Login />
+    <Id>2</Id>
+  </UserIdentity>
+  <UserIdentity>
+    <Login>Dima</Login>
+    <Id>3</Id>
+  </UserIdentity>
 </ArrayOfUserIdentity>

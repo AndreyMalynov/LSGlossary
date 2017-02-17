@@ -10,11 +10,11 @@
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
-input,
+/*input,
 select,
 textarea {
     max-width: 280px;
-}
+}*/
 
 .delete {
     width: 2vw;
@@ -38,11 +38,27 @@ textarea {
 
 #addWord, #inputLogin{
     display: inline;
-    width: 30vw;
-    max-width: 30vw;
+    width: 35rem;
+    
 }
 
 #addWordBtn, #loginBtn{
     display: inline;
-    width: 10vw;
+    width: 10rem;
+}
+
+.name{
+    width: 20%;
+}
+
+.pronunciation{
+    width: 20%;
+}
+
+.definition{
+    width: 30%;
+}
+
+.example{
+    width: 30%;
 }

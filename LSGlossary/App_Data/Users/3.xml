@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Login>Dima</Login>
+  <Id>3</Id>
+  <Words>
+    <Word>
+      <Id>0</Id>
+      <Name>som</Name>
+      <Pronunciation>  /s(ə)m/</Pronunciation>
+      <Definition>specified amount or number of.</Definition>
+      <Example>   ‘I made some money running errands’</Example>
+    </Word>
+  </Words>
+</User>

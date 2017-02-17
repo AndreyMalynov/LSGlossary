@@ -4,16 +4,14 @@
     ViewBag.Title = "PersonalPage";
 }
 <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
+    <div class="container" style="position:relative;">
         <div class="navbar-header">
             <span class="navbar-brand">@Model.Login</span>
-        </div>
-        <div class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right" role="search">
-                <div class="form-group">
+            <form class="form-inline navbar-right" role="search">
+                <div class="nav-form form-group">
                     <input type="text" id="addWord" class="form-control" placeholder="Word">
+                    <button type="submit" id="addWordBtn" class="btn btn-default">Add</button>
                 </div>
-                <button type="submit" id="addWordBtn" class="btn btn-default">Add</button>
             </form>
         </div>
     </div>

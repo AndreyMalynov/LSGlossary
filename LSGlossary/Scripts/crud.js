@@ -21,7 +21,7 @@ $(document).ready(function () {
 
 function AddWord() {
     var nameOfWord = $('#addWord').val();
-
+    $('#addWord').val('');
     $.ajax({
         url: '/api/values/',
         type: 'POST',
@@ -52,7 +52,7 @@ function GetAllWords() {
 
 
 function WriteResponse(words) {
-    var strResult = "<table class='table'><th>Name</th><th>Pronunciation</th><th>Definition</th><th>Example</th><th></th>";
+    var strResult = "<table class='table table-bordered'><th>Name</th><th>Pronunciation</th><th>Definition</th><th>Example</th><th></th>";
     $.each(words, function (index, word) {
         strResult += "<tr" + " id='" + word.Id + "'><td class='name'>" + word.Name + "</td><td class='pronunciation'> " + word.Pronunciation +
             "</td><td class='definition'>" + word.Definition + "</td><td class='example'> " + word.Example + "</td>" +
