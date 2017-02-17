@@ -4,4 +4,8 @@
     <Login>Sam</Login>
     <Id>0</Id>
   </UserIdentity>
+  <UserIdentity>
+    <Login>Ever</Login>
+    <Id>1</Id>
+  </UserIdentity>
 </ArrayOfUserIdentity>

@@ -68,3 +68,4 @@ C:\Users\Avels\Documents\Visual Studio 2015\Projects\LSGlossary\LSGlossary\bin\r
 C:\Users\Avels\Documents\Visual Studio 2015\Projects\LSGlossary\LSGlossary\bin\ru\System.Web.WebPages.Razor.resources.dll
 C:\Users\Avels\Documents\Visual Studio 2015\Projects\LSGlossary\LSGlossary\obj\Release\LSGlossary.dll
 C:\Users\Avels\Documents\Visual Studio 2015\Projects\LSGlossary\LSGlossary\obj\Release\LSGlossary.pdb
+C:\Users\Avels\Documents\Visual Studio 2015\Projects\LSGlossary\LSGlossary\obj\Release\LSGlossary.csprojResolveAssemblyReference.cache

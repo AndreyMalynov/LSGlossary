@@ -3,11 +3,25 @@
 @{
     ViewBag.Title = "PersonalPage";
 }
-<h2>@Model.Login</h2>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <span class="navbar-brand">@Model.Login</span>
+        </div>
+        <div class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" id="addWord" class="form-control" placeholder="Word">
+                </div>
+                <button type="submit"id="addWordBtn" class="btn btn-default">Add</button>
+            </form>
+        </div>
+    </div>
+</div>
 <div id="tableBlock" class="table-responsive"></div>
 
-<input type="text" id="addWord" />
-<button id="addWordBtn" class="btn open_window">Добавить</button>
+@*<input type="text" id="addWord" />
+<button id="addWordBtn" class="btn open_window">Добавить</button>*@
 
 @section scripts
 {

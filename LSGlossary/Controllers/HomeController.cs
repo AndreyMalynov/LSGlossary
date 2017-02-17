@@ -42,10 +42,11 @@ namespace LSGlossary.Controllers
 
         public ActionResult PersonalPage()
         {
+
             if (!User.Identity.IsAuthenticated)
                 return RedirectToAction("Login");
 
-            using(UserContext user = new UserContext(int.Parse(User.Identity.Name)))
+            using (UserContext user = new UserContext(int.Parse(User.Identity.Name)))
             {
                 //// temper block
                 //user.AddWord("1name", "1pron", "1def", "1exam");
@@ -56,7 +57,8 @@ namespace LSGlossary.Controllers
 
                 UserForView userForView = new UserForView(user.GetLogin(), user.GetWords());
                 return View(userForView);
-            }           
+            }
+
         }
     }
 }

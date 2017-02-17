@@ -2,8 +2,13 @@
 @{
     ViewBag.Title = "Login";
 }
-
-<h2>Login</h2>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <span class="navbar-brand">Log in</span>
+        </div>
+    </div>
+</div>
 <div>
     @using (Html.BeginForm("Login", "Home", FormMethod.Post, new { @class = "form-horizontal" }))
     {

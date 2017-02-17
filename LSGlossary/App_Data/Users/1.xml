@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Login>Ever</Login>
+  <Id>1</Id>
+  <Words>
+    <Word>
+      <Id>0</Id>
+      <Name>some</Name>
+      <Pronunciation> /s(ə)m/</Pronunciation>
+      <Definition>An unspecified amount or number of.</Definition>
+      <Example>  ‘I made some money running errands’</Example>
+    </Word>
+    <Word>
+      <Id>1</Id>
+      <Name>first</Name>
+      <Pronunciation> /fəːst/</Pronunciation>
+      <Definition>coming before all others in time or order; earliest; 1st.</Definition>
+      <Example>  ‘his first wife’</Example>
+    </Word>
+  </Words>
+</User>
