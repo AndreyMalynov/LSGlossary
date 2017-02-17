@@ -6,16 +6,16 @@
     <Word>
       <Id>0</Id>
       <Name>some</Name>
-      <Pronunciation> /s(ə)m/</Pronunciation>
+      <Pronunciation>   /s(ə)m/</Pronunciation>
       <Definition>An unspecified amount or number of.</Definition>
-      <Example>  ‘I made some money running errands’</Example>
+      <Example>    ‘I made some money running errands’</Example>
     </Word>
     <Word>
       <Id>1</Id>
-      <Name>first</Name>
-      <Pronunciation> /fəːst/</Pronunciation>
-      <Definition>coming before all others in time or order; earliest; 1st.</Definition>
-      <Example>  ‘his first wife’</Example>
+      <Name>second</Name>
+      <Pronunciation> /sɪˈkɒnd/</Pronunciation>
+      <Definition>Constituting number two in a sequence; coming after the first in time or order; 2nd.</Definition>
+      <Example>  ‘he married for a second time’</Example>
     </Word>
   </Words>
 </User>
